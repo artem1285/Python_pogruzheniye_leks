@@ -96,7 +96,7 @@ f = open('mydata.bin', 'rb')
 for block in iter(functools.partial(f.read, 16), b''):
     print(block)
 f.close()
-'''
+
 # Функция next()
 data = [2, 4, 6, 8]
 list_iter = iter(data)
@@ -115,7 +115,15 @@ print(next(list_iter, 42))
 print(next(list_iter, 42))
 print(next(list_iter, 42))
 print(next(list_iter, 42))
-
+'''
+# самопроверка
+data = {"один": 1, "два": 2, "три": 3}
+x = iter(data.items())
+print(x)
+y = next(x)
+print(y)
+z = next(iter(y))
+print(z)
 
 
 

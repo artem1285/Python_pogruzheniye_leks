@@ -230,7 +230,7 @@ def factorial(n):
 
 for i, num in enumerate(factorial(10), start=1):
     print(f'{i}! = {num}')
-'''
+
 # Функции iter и next для генераторов
 def factorial(n):
     number = 1
@@ -256,5 +256,3 @@ def gen(a: int, b: int) -> str:
 
 for item in gen(10, 1):
     print(f'{item = }')
-
-

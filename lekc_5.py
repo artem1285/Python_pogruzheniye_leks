@@ -115,7 +115,7 @@ print(next(list_iter, 42))
 print(next(list_iter, 42))
 print(next(list_iter, 42))
 print(next(list_iter, 42))
-'''
+
 # самопроверка
 data = {"один": 1, "два": 2, "три": 3}
 x = iter(data.items())
@@ -124,7 +124,7 @@ y = next(x)
 print(y)
 z = next(iter(y))
 print(z)
-
+'''
 
 
 

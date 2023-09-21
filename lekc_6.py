@@ -101,17 +101,39 @@ print (x, z)
 # Модуль sys 
 print('start') 
 print('stop') 
-"""
+
 
 # Модуль random
 
+import random as rnd
 
+print ('f{rnd.random() = }')
+rnd.seed(42)
+state = rnd.getstate()
+print ('f{state = }')
+print ('f{rnd.random () = }')
+print ('f{rnd.random () = }')
+rnd.getstate(state)
+print ('f{state = }')
+print ('f{rnd.random () = }')
+print ('f{rnd.random () = }')
+rnd.setstate(state)
+print ('f{rnd.random () = }')
+print ('f{rnd.random () = }')
+"""
 
+# ф в модуле
+import random as rnd
 
+START = -100
+STOP = 1_000
+STEP = 10
+data = [2, 4, 6, 8, 42, 73]
 
-
-
-
+print('f {rnd.randint(START, STOP = }')
+print('f {rnd.uniform(START, STOP = }')
+print('f {rnd.choice(data)= }')
+print('f {rnd.randrange(START, STOP, STEP= }')
 
 
 

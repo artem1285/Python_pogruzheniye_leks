@@ -46,7 +46,7 @@ result = func(1, 6)
 #  Виды модулей
 """Four basic mathematical operations.
 Addition, subtraction, multiplication and division as functions.
-"""
+
 _START_SUM = 0
 _START_MULT = 1
 _BEGINNING = 0
@@ -82,10 +82,28 @@ print(f'{sub(10, 2) = }')
 print(f'{mul(2, 2, 2, 2, 2) = }')
 print(f'{div(-100, 5, -2) = }')
 
+# простой импорт
+from mathematical import lekc_6_baz
+x = lekc_6_baz.div (10, 2)
+print (x)
 
 
+# Абсольютный импорт 
+
+from mathematical import lekc_6_baz as bm
+from mathematical.lekc_6_pacet import exp
+x = bm.div(12, 5)
+z = exp(2, 3)
+print (x, z)
 
 
+# Модули “из коробки”
+# Модуль sys 
+print('start') 
+print('stop') 
+"""
+
+# Модуль random
 
 
 

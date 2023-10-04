@@ -15,3 +15,11 @@ my_dict = {
 res = json.dumps(my_dict, indent=2, separators=(',', ':'),
                  sort_keys=True)
 print(res)
+
+
+самопровекрка 
+import json
+a = 'Hello world!'
+b = {key: value for key, value in enumerate(a)}
+c = json.dumps(b, indent=3, separators=('; ', '= '))
+print(c)
